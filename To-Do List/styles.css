@@ -1,0 +1,207 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body{
+    background-color: #0f0f0f;
+    /* background-image: linear-gradient(120deg, #f6D365 , rgb(108, 204, 108)); */
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    text-transform: capitalize;
+    font-size: 30px;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color:rgb(108, 204, 108);
+}
+form input{
+    background: white;
+    border: none;
+    font-size: 1.3rem;
+    padding:0.5rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+form button{
+    color: rgb(108, 204, 108);
+    background-color: white;
+    border: none;
+    font-size: 42px;
+    padding:0.5rem;
+    transition:  all 0.3s ease;
+}
+form button:hover{
+background:rgb(108, 204, 108) ;
+color: white;
+}
+#line{
+   width: 80%;
+   margin-left: 10%;
+   border-color: rgb(108, 204, 108);
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style-type: none;
+}
+.todo{
+   
+   margin: 1.5rem;
+    background-color: white;
+    color: #0f0f0f;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.box{
+    display: flex;
+      box-shadow: 1px 1px 5px 1px rgb(108, 204, 108);
+}
+.todo-button{
+cursor: pointer;
+}
+.todo li{
+flex: 1;
+    font-size: 1rem;
+text-transform: capitalize;
+padding: 0rem 1rem;
+}
+.fa-trash , .fa-check{
+    pointer-events: none;
+}
+.trash-btn{
+background-color: #DC143C;;
+color: white;
+border: none;
+padding: 1rem;
+}
+.fa-check{
+    font-size: 20px;
+}
+.fa-trash{
+    font-size: 20px;
+}
+.trash-btn:hover{
+    color: rgb(108, 204, 108);
+    background-color: white;
+}
+.complete-btn{
+    background-color: rgb(108, 204, 108);
+    color: white;
+border: none;
+padding: 1rem;
+}
+.complete-btn:hover{
+    background-color: white;
+    color: rgb(108, 204, 108);
+    transition: 0.2s ease;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+
+}
+.pbox p{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 12px;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+margin-top: 2.5rem;
+}
+
+select{
+    background-color:white;
+    color: rgb(108, 204, 108);
+    width: 10rem;
+    cursor: pointer;
+padding: 1rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.select::after{
+    content: "\25BC";
+    font-size: 20px;
+    position: absolute;
+    background-color: rgb(108, 204, 108);
+    padding: 0.7rem;
+    pointer-events: none;
+top: 0;
+right: 0;
+}
+.select:hover::after{
+    background-color: white;
+    transition: all 0.3s ease;
+    color: rgb(108, 204, 108);
+}
+
+option:hover{
+    cursor: pointer;
+    background-color: rgb(108, 204, 108);
+    color: #fff;
+}
+
+@media (max-width:675px) {
+    header{
+        padding-left: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .pbox{
+        width: 100%;
+    }
+    .todo-input{
+        width: 100%;
+    }
+    form{
+        padding: 20px;
+        display: block;
+    }
+    .todo li{
+        min-width: 10rem;
+    }
+    .select{
+        display: inline-flex;
+        margin: 0px;
+        margin-top: 2.5rem;
+    }
+    #line{
+    margin-left: 5%;
+    width: 90%;
+    }
+}
